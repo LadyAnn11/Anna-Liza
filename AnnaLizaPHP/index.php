@@ -2,22 +2,21 @@
     <h1 class="text-center"> Registration For IT Conference</h1>
 
 
-    <form>
+    <form method="get" action="success.php">
   <div class="form-group">
-    <label for="exampleInputfirstname">First name</label>
-    <input type="firstname" class="form-control" id="exampleInputfirstname">
+    <label for="firstname">First name</label>
+    <input required type="firstname" class="form-control" id="firstname" name="firstname">
   </div>
   <div class="form-group">
-    <label for="exampleInputlastname">Last name</label>
-    <input type="lastname" class="form-control" id="exampleInputlastname">
+    <label for="lastname">Last name</label>
+    <input required type="lastname" class="form-control" id="lastname" name="lastname" >
   </div>
-</form>
 
-<form action="/action_page.php">
-<p>Date of Birth: <input type="text" id="datepicker"></p>
-</form>
+<div class="form-group">
+<label for="birthday">Date of Birth:</label>
+<input required type="datepicker" class="form-control" id="datepicker" name="datepicker">
+</div>
 
-  <form action="/action_page.php">
     <label for="Specialty">Specialty:</label>
 <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -31,7 +30,7 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1"> WEB ADMINISTRATOR</label>
 </div>
-</form>
+
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -49,7 +48,8 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" class="btn btn-primary" style="height: 50px; width: 2000px">Submit</button>
-</form>
+  <button type="submit" class="btn btn-primary" style="height: 50px; width: 2000px">Submit</button></label>
+  </form>
+
 <?php require_once 'includes/footer.php' ?>
    
